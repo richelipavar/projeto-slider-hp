@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Projeto Harry Potter Slider - MapaDev Week</title>
+
+    <!--ícone da página-->
+    <link rel="shortcut icon" href="./imagens/icone.png" type="imagem/x-icon" />
+    <!--Fontes-->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Outfit&display=swap"
+      rel="stylesheet"
+    />
+    <!--página de estilo-->
+    <link rel="stylesheet" href="reset.css" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!--Cabeçalho-->
+    <header class="cabecalho">
+      <img
+        src="./imagens/icone.png"
+        alt="símbolo das casas de hogwarts"
+        class="hogwarts"
+      />
+      <h1 class="titulo">MapaDev Week</h1>
+    </header>
+
+    <main class="hp-slider">
+      <button class="btn-seta btn-voltar" id="btn-voltar">
+        <img src="./imagens/seta.png" alt="seta voltar" />
+      </button>
+      <!--Criação dos slides-->
+      <ul class="lista-hogw">
+        <!--Criação dos slides I-->
+        <li class="cartao selecionado fundo-1">
+          <div class="informacoes">
+            <h2 class="nome">Harry Potter</h2>
+            <p class="vida">Casa: Grifinória</p>
+          </div>
+
+          <div class="container-imagem">
+            <img
+              src="./imagens/harry.png"
+              alt="Harry Potter"
+              class="imagem-hogw"
+            />
+          </div>
+
+          <div class="descricao">
+            <h3 class="titulo">Descrição</h3>
+            <p class="texto">
+              Ele é um bruxo, filho único de Tiago Potter e Lílian Evans Potter,
+              considerado um dos mais famosos bruxos dos tempos modernos e o
+              aluno mais famoso da Escola de Magia e Bruxaria de Hogwarts. Ficou
+              famoso por ter sido o único sobrevivente da Maldição da Morte,
+              quando Lord Voldemort tentou assassiná-lo ainda bebê.
+            </p>
+          </div>
+        </li>
+        <!--Criação dos slides II-->
+        <li class="cartao fundo-2">
+          <div class="informacoes">
+            <h2 class="nome">Hermione Granger</h2>
+            <p class="vida">Casa: Grifinória</p>
+          </div>
+
+          <div class="container-imagem">
+            <img
+              src="./imagens/hermione.png"
+              alt="Hermione Granger"
+              class="imagem-hogw"
+            />
+          </div>
+
+          <div class="descricao">
+            <h3 class="titulo">Descrição</h3>
+            <p class="texto">
+              Hermione possuí uma mente acadêmica brilhante e se provou uma
+              estudante talentosa em quase todas as matérias que estudou, a
+              ponto de ser considerada à Casa Corvinal quando classificada pelo
+              Chapéu Seletor. No entanto, sua disposição cética e lógica foi uma
+              das características que o fez mudar de ideia.
+            </p>
+          </div>
+        </li>
+        <!--Criação dos slides III-->
+        <li class="cartao fundo-3">
+          <div class="informacoes">
+            <h2 class="nome">Rony Weasley</h2>
+            <p class="vida">Casa: Grifinória</p>
+          </div>
+
+          <div class="container-imagem">
+            <img
+              src="./imagens/rony.png"
+              alt="Rony Weasley"
+              class="imagem-hogw"
+            />
+          </div>
+
+          <div class="descricao">
+            <h3 class="titulo">Descrição</h3>
+            <p class="texto">
+              Monitor; Goleiro; Auror; Tesoureiro do F.A.L.E. Nascido em 1º de
+              março, Rony Weasley é alto, magro, narigudo e cheio de sardas.
+              Melhor amigo de Harry Potter desde que o a caminho do primeiro ano
+              em Hogwarts, os dois dividem o mesmo dormitório na Grifinória.
+            </p>
+          </div>
+        </li>
+      </ul>
+      <button class="btn-seta" id="btn-avancar">
+        <img src="./imagens/seta.png" alt="seta avançar" />
+      </button>
+    </main>
+
+    <script src="index.js"></script>
+  </body>
+</html>
